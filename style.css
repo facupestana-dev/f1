@@ -1,0 +1,383 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    opacity: 1;
+    transition: opacity 0.6s cubic-bezier(.4, 0, .2, 1);
+
+    ::selection {
+        background: #e10600;
+        /* rojo F1 */
+        color: #ffffff;
+
+    }
+}
+
+/* Animación línea menú activo */
+.menu-animado {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-animado .linea-animada {
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    width: 0;
+    max-width: 70%;
+    transform: translateX(-50%);
+}
+
+.menu-animado.activo .linea-animada {
+    animation: estirar-linea 2.5s cubic-bezier(.4, 0, .2, 1) infinite alternate;
+}
+
+@keyframes estirar-linea {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 70%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+footer {
+    width: 100%;
+    background: linear-gradient(90deg, #b71c1c 60%, #880e1d 100%);
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Centrar todos los h1 */
+h1 {
+    text-align: center;
+    text-decoration: wavy, underline;
+}
+
+/* Carrusel de Grandes Premios */
+.carrusel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.carrusel-flecha {
+    background: #b71c1c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #880e1d;
+    transition: background 0.2s;
+}
+
+.carrusel-flecha:hover {
+    background: #880e1d;
+}
+
+#gp-carrusel {
+    min-width: 320px;
+    max-width: 500px;
+    margin: 0 20px;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #880e1d;
+    padding: 20px;
+    color: #fff;
+}
+
+#gp-carrusel table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#gp-carrusel th,
+#gp-carrusel td {
+    padding: 6px 8px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+#gp-carrusel tr[style*="background:#b00"] td {
+    border: 2px solid #fff;
+}
+
+/* Bordes negros para la fila destacada de Franco Colapinto */
+tr[style*="background:#b71c1c"] td,
+tr[style*="background:#b71c1c"] th {
+    border-color: #000 !important;
+}
+
+/* Imagen flotante de piloto/equipo */
+.preview-img {
+    pointer-events: none;
+    box-shadow: 0 2px 8px #880e1d;
+    border-radius: 8px;
+    border: 2px solid #b71c1c;
+    background: #fff;
+}
+
+/* Mostrar foto al pasar el cursor sobre el piloto */
+.piloto-hover {
+    position: relative;
+    cursor: pointer;
+}
+
+.piloto-hover .foto-piloto {
+    display: none;
+    position: absolute;
+    left: 120%;
+    top: 0;
+    width: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #880e1d;
+    z-index: 10;
+}
+
+.piloto-hover:hover .foto-piloto {
+    display: block;
+}
+
+
+header {
+    background: linear-gradient(90deg, #b71c1c 60%, #880e1d 100%);
+    padding: 30px 0 10px 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+nav ul li a:hover {
+    background: #d32f2f;
+}
+
+h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin: 32px 0 24px 0;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px #880e1d;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(183, 28, 28, 0.15);
+    padding: 30px 40px;
+    margin-bottom: 80px;
+    /* Espacio para el footer fijo */
+}
+
+section {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+h2 {
+    color: #b71c1c;
+    border-left: 6px solid #b71c1c;
+    padding-left: 12px;
+    margin-bottom: 12px;
+    font-size: 1.5em;
+}
+
+ul {
+    padding-left: 24px;
+}
+
+ul li {
+    margin-bottom: 6px;
+    font-size: 1.1em;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #1a1a1a;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(183, 28, 28, 0.08);
+}
+
+th,
+td {
+    border: 1px solid #b71c1c;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #b71c1c;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #222;
+}
+
+footer {
+    background: #b71c1c;
+    color: #fff;
+    text-align: center;
+    padding: 18px 0;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.equipo-hover {
+    position: relative;
+    cursor: none;
+}
+
+.equipo-hover .foto-equipo {
+    display: none;
+    position: absolute;
+    left: 120%;
+    top: 0;
+    width: 120px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #880e1d;
+    z-index: 10;
+}
+
+.equipo-hover:hover .foto-equipo {
+    display: block;
+    width: 300px;
+    cursor: none;
+}
+
+.equipo-hover .foto-equipo2 {
+    display: none;
+    position: absolute;
+    left: 120%;
+    top: 0;
+    width: 90px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #880e1d;
+    z-index: 10;
+}
+
+#logof1 {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #b71c1c;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(183, 28, 28, 0.15);
+    z-index: 1;
+}
+
+#logof1 {
+  transition: filter 0.4s ease;
+}
+
+#logof1:hover {
+  transform: scale(1.03); /* crece apenas */
+  filter: drop-shadow(0 0 30px rgba(225,6,0,0.6)); /* brillo rojo suave */
+}
+
+/*Foto y cuircuito de c/ GP*/
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    vertical-align: middle;
+    position: relative;
+  }
+
+  td.gp-cell {
+    padding-left: 60px; /* espacio para hover */
+    cursor: pointer;
+  }
+
+  /* Contenedor para las imágenes */
+  td.gp-cell .hover-container {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 105%;
+    transform: translateY(-50%);
+    width: 120px;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 5px;
+    z-index: 10;
+  }
+
+  td.gp-cell:hover .hover-container {
+    display: block;
+  }
+
+  td.gp-cell .hover-container img {
+    max-width: 100%;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  /* Estilos para el lienzo negro */
+.piloto-hover.fallecido::before {
+    content: ""; /* Es necesario para que el pseudo-elemento se muestre */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Color negro con un 70% de opacidad */
+    z-index: 1; /* Asegura que la capa esté por encima de la imagen */
+    transition: opacity 0.3s ease; /* Transición para un efecto suave */
+    pointer-events: none; /* Permite que los clics pasen a través del lienzo */
+}
+
+/* Efecto al pasar el mouse (opcional) */
+.piloto-hover.fallecido:hover::before {
+    opacity: 0; /* Hace que el lienzo negro se vuelva transparente */
+}
+

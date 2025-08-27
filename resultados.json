@@ -1,0 +1,24 @@
+{
+  "Australia": [
+    {"pos": 1, "nombre": "Lando Norris", "equipo": "McLaren"},
+    {"pos": 2, "nombre": "Oscar Piastri", "equipo": "McLaren"},
+    {"pos": 3, "nombre": "Max Verstappen", "equipo": "Red Bull Racing"},
+    {"pos": 4, "nombre": "Charles Leclerc", "equipo": "Ferrari"},
+    {"pos": 5, "nombre": "Lewis Hamilton", "equipo": "Ferrari"},
+    {"pos": 6, "nombre": "George Russell", "equipo": "Mercedes"},
+    {"pos": 7, "nombre": "Carlos Sainz", "equipo": "Ferrari"},
+    {"pos": 8, "nombre": "Sergio Pérez", "equipo": "Red Bull Racing"},
+    {"pos": 9, "nombre": "Fernando Alonso", "equipo": "Aston Martin"},
+    {"pos": 10, "nombre": "Franco Colapinto", "equipo": "Alpine"},
+    {"pos": 11, "nombre": "Esteban Ocon", "equipo": "Alpine"},
+    {"pos": 12, "nombre": "Pierre Gasly", "equipo": "Alpine"},
+    {"pos": 13, "nombre": "Yuki Tsunoda", "equipo": "RB"},
+    {"pos": 14, "nombre": "Daniel Ricciardo", "equipo": "RB"},
+    {"pos": 15, "nombre": "Valtteri Bottas", "equipo": "Kick Sauber"},
+    {"pos": 16, "nombre": "Zhou Guanyu", "equipo": "Kick Sauber"},
+    {"pos": 17, "nombre": "Kevin Magnussen", "equipo": "Haas"},
+    {"pos": 18, "nombre": "Nico Hülkenberg", "equipo": "Haas"},
+    {"pos": 19, "nombre": "Alex Albon", "equipo": "Williams"},
+    {"pos": 20, "nombre": "Lance Stroll", "equipo": "Aston Martin"}
+  ]
+}
