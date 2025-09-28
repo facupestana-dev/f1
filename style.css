@@ -460,3 +460,12 @@ main ul li {
   font-weight: bold;
   color: red;
 }   
+
+#motores26 {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #b71c1c;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(183, 28, 28, 0.15);
+    z-index: 1;
+}
